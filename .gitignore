@@ -1,0 +1,26 @@
+# Rust build directory
+/target/
+**/*.rs.bk
+
+# WebAssembly build directory
+/src/rust/pkg/
+
+# Node modules
+/node_modules/
+
+# Build output
+/dist/
+
+# IDE files
+.vscode/
+.idea/
+
+# Environment files
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log* 

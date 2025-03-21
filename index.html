@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirIndia Aviator Game</title>
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>Aviator</h1>
+            <div class="balance">Balance: <span id="balance">1000</span></div>
+        </div>
+        
+        <div class="game-main">
+            <div class="multiplier-display">
+                <canvas id="gameCanvas" width="800" height="400"></canvas>
+                <div class="multiplier" id="multiplier">1.00x</div>
+                <div class="crash-point" id="crash-point"></div>
+            </div>
+            
+            <div class="game-controls">
+                <div class="bet-controls">
+                    <input type="number" id="bet-amount" min="1" value="10">
+                    <button id="place-bet">Place Bet</button>
+                </div>
+                <button id="cash-out" disabled>Cash Out</button>
+            </div>
+        </div>
+
+        <div class="game-history">
+            <h2>History</h2>
+            <div class="history-list" id="history-list"></div>
+        </div>
+    </div>
+    <script type="module" src="bundle.js"></script>
+</body>
+</html> 
